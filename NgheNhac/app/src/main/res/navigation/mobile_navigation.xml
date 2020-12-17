@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.nghenhac.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_play_list" />
+
+    <fragment
+        android:id="@+id/navigation_play_list"
+        android:name="com.example.nghenhac.ui.playlist.PlayListFragment"
+        android:label="Play list"
+        tools:layout="@layout/fragment_play_list" />
+</navigation>
